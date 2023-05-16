@@ -1,0 +1,41 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    font-family: sans-serif;
+    background-color: #f5f6f7;
+}
+.header{
+    text-align: center;
+    text-transform: uppercase;/*Pone todo el texto en mayuscula*/
+    padding: 32px;
+    background-color: #0a0a23;
+    color: #fff;
+    border-bottom: 4px solid #fdb347;
+}
+.gallery{
+    display: flex; /*El contenedor se vuelve flexible y por lo tanto los hijos tambien*/
+    flex-direction: row;/*Pone todas las imagenes en un fila en el orden que fue cargado*/
+    /*flex-direction: row-reverse; //Lo mismo que el anterior pero la ultima foto ahora es la primera
+    flex-direction: column; //Pone todas las imagenes en una columna en el orden que fue cargado
+    flex-direction: column-reverse; //Lo mismo que el anterior pero la ultima foto ahora es la primera */
+    flex-wrap: wrap; /*Para que las fotos se pongan en varias filas*/
+    justify-content: center;
+    align-items: center;
+    padding: 20px 10px;
+    max-width: 1400px;
+    margin: 0 auto;
+    gap: 16px; /*Espacio entre los elementos*/
+}
+.gallery img{
+    width: 100%;
+    max-width: 350px;
+    height: 300px;
+    object-fit: cover;/*Para que no se distorsionen las imagenes*/
+    border-radius: 10px;
+}
+.gallery::after{ /*Para que quede bien ubicada la ultima foto si hay un espacio que sobra*/
+    content: "";
+    width: 350px;
+}

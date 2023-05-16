@@ -1,0 +1,78 @@
+@media (prefers-reduced-motion: no-preference){
+    *{
+        scroll-behavior: smooth
+    }
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Tahoma;
+}
+body{
+    display: flex;
+    margin-left: 310px;
+    min-width: 300px;
+}
+nav {
+    position: fixed;
+    min-width: 300px;
+    top: 0;
+    left: 0;
+    width: 300px;
+    height: 100%;
+    z-index: 1000;
+    overflow-y: auto;
+}
+#JS_Documentation{
+    background-color: rgb(39, 18, 18);
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    font-size: 30px;
+    border: 1px solid rgb(65, 63, 63);
+    border-bottom: 0;
+}
+nav a {
+    display: block;
+    padding: 12px 30px;
+    background-color: rgb(39, 18, 18);
+    color: #fff;
+    text-decoration: none;
+    border: 1px solid rgb(65, 63, 63);
+    border-bottom: 0;
+}
+.nav-link#reference{
+    padding-bottom: 40px;
+}
+main{
+    width: 100%;
+    padding: 20px;
+}
+.main-section header{
+    margin: 20px;
+    font-size: 25px;
+    color: rgb(20, 20, 20);
+}
+.main-section p{
+    margin: 20px;
+    padding-left: 10px;
+    font-size: 16px;
+    color: rgb(65, 63, 63);
+}
+.main-section li{
+    margin: 20px;
+    margin-left: 70px;
+    color: rgb(65, 63, 63);
+}
+pre{
+    background-color: #f8f8f8;
+    border: none;
+    margin: 20px;
+    padding: 10px;
+    white-space: pre-wrap;
+} 
+code {
+    padding-left: 30px;
+    font-family: Consolas, "Courier New", monospace;
+    font-size: 13px;
+}

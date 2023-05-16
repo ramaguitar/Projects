@@ -1,0 +1,219 @@
+*{
+    font-family: 'Work Sans', sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@media (prefers-reduced-motion: no-preference){
+    *{
+        scroll-behavior: smooth
+    }
+}
+body {
+    background: #f5f6f84e;
+    margin: 0;
+}
+
+#header-img{
+    width: 150px;
+    height: 100%;
+    object-fit: cover;
+}
+
+header{
+    width: 100%;
+    height: 80px;
+    background: #ffff;
+    color: #0101ffad;
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    position: fixed;
+    top: 0;
+}
+
+nav{
+    width: 50%;
+    max-width: 300px;
+    height: 50px;
+}
+nav > ul{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-inline-start: 0;
+    margin-block: 0;
+    height: 100%;
+}
+nav li{
+    color: #4646d1;
+    margin: 0 0.2rem;
+    padding: 0.2rem;
+    display: block;
+}
+nav li:hover{
+    color: #1b1b32;
+    background-color: #dfdfe2;
+    cursor: pointer;
+}
+li > a{
+    color: inherit;
+    text-decoration: none;
+}
+main{
+    padding-top: 100px;
+    
+}
+
+.email{
+    text-align: center;
+    color: #0101ffad;
+}
+
+#email{
+    display: block;
+    margin: 10px auto;
+    width: 250px;
+    height: 30px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+input[type="submit"]{
+    background-color: #0101ffad;
+    color: #ffff;
+    width: 100px;
+    height: 30px;
+    border: 2px solid #02072b;
+    border-radius: 5px;
+    font-family: sans-serif;
+}
+input[type="submit"]:hover{
+    cursor: pointer;
+}
+
+h1{
+    font-size: 25px;
+}
+
+#Caracteristicas{
+    display: block;
+    margin: 50px;
+}
+
+.grid{
+    display: flex;
+    margin: 60px auto;
+    width: 80%;
+}
+
+.icon{
+    display: flex;
+    color: #0101ffad;
+    align-items: center;
+    justify-content: center;
+    width: 20%;
+    height: 100%;
+}
+
+.text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 80%;
+}
+
+#Nosotros{
+    display: block;
+    text-align: center;
+    margin: 100px;
+}
+
+.video{
+    margin: 20px auto;
+    text-align: center;
+}
+#Catalogo{
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    width: 80%;
+    margin: 50px auto;
+}
+.precio{
+    width: 30%;
+    background-color: #1f80c13e;
+    border: 2px solid #1f80c13e;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.precio img{
+    display: block;
+    width: 100%;
+    height: 70%;
+}
+
+.precio h2{
+    text-transform: uppercase;
+    color: #0b0b10c7;
+}
+.precio h3{
+    padding: 20px;
+    font-family: Helvetica;
+    color: #0101ffad;
+}
+
+.precio div{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-top: 30px;
+}
+
+.precio input[type="submit"]{
+    width: 150px;
+    height: 35px;
+}
+
+footer{
+    margin-top: 30px;
+    background-color: #1f80c13e;
+    padding: 20px;
+}
+
+footer ul{
+    display: flex;
+    justify-content: end;
+
+}
+
+li{
+    list-style: none;
+    padding: 0 10px;
+}
+
+footer span{
+    margin-top: 5px;
+    display: flex;
+    justify-content: end;
+    font-size: 0.9em;
+    color: #444;
+}
+
+@media (max-width: 1300px) {
+    #Catalogo {
+      flex-direction: column;
+    }
+    .precio{
+      max-width: 300px;
+      width: 100%;
+      margin: 0 auto;
+      margin-bottom: 10px;
+    }
+    .precio div{
+        margin: 0;
+    }
+  }

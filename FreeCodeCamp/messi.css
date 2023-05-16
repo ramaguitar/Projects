@@ -1,0 +1,48 @@
+*{
+    font-family: Tahoma;
+}
+body{
+    background-color: rgba(113, 193, 191, 60%);
+    color: rgb(33, 31, 31);
+}
+img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+#img-div{
+    margin: auto;
+    width: 95%;
+    padding: 20px;
+    background: rgba(245, 243, 243, 0.664);
+    text-align: center;
+    border: rgb(25, 123, 184) solid 5px;
+    border-radius: 5px;
+}
+h1, #tribute-info{
+    text-align: center;
+    margin: 20px;
+}
+.timeline{
+    margin: auto;
+    text-align: left;
+    width: 40%;
+    font-size: 14px;
+}
+h2{
+    text-align: center;
+    font-size: 18px;
+    margin: 40px 0;
+}
+ul{
+    padding: 0;
+    margin: 0;
+}
+footer{
+    margin: 50px;
+    text-align: center;
+}
+#img-caption{
+    margin-top: 20px;
+}

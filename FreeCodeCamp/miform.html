@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset= "utf-8">
+	<title>Sports Survey</title>
+	<link rel="stylesheet" type="text/css" href="miform.css">
+
+	<link rel="icon" href="file:///C:/Users/rguitar/Downloads/reshot-icon-sports-Q5BX6CUELM.svg">
+</head>
+<body>
+	<div class="container">
+		<h1 id="title">Sports Survey</h1>
+		<p id="description">I invite you to complete this short sports survey</p>
+		<form id="survey-form" required>
+			<fieldset>
+				<div>
+				<label for="name" id="name-label">Name <input id="name" type="text" required name="name" placeholder="Enter your name"></label>
+				<label for="email" id="email-label">Email <input id="email" type="email" required name="email" placeholder="Enter your email"></label>
+				<label for="age" id="number-label">Age <input type="number"min="13" max="120" id="number" name="number" placeholder="Enter your age"></label>
+				</div>
+				<div>
+				<label for="dropdown">Do you play any sport?
+					<select id="dropdown" name="select">
+						<option value="" >Select an option</option>
+						<option value="1">Soccer</option>
+						<option value="2">Tennis</option>
+						<option value="3">Rugby</option>
+						<option value="4">Hockey</option>
+						<option value="4">Other</option>
+					</select>
+				</label>
+				</div>
+				<div>
+				<label>Do you watch your sport on the TV?</label>
+				<label for="si"><input type="radio" name="answer" id="si" class="inline" value="1">Yes</label>
+				<label for="no"><input type="radio" name="answer" id="no" class="inline" value="2">No</label>
+				<label for="sometimes"><input type="radio" name="answer" id="sometimes" class="inline" value="3">Sometimes</label>
+				</div>
+				<div>
+				<label>If your sport is soccer, which of these options are soccer players?</label>
+				<label for="selection1"><input type="checkbox" id="selection1" value="1" class="inline">Lionel Messi</label>
+				<label for="selection2"><input type="checkbox" id="selection2" value="2" class="inline">Rafael Nadal</label>
+				<label for="selection3"><input type="checkbox" id="selection3" value="3" class="inline">Angel Di Maria</label>
+				<label for="selection4"><input type="checkbox" id="selection4" value="4" class="inline">Cristiano Ronaldo</label>
+				<label for="selection5"><input type="checkbox" id="selection5" value="5" class="inline">Tiger Woods</label>
+				<label for="selection6"><input type="checkbox" id="selection6" value="6" class="inline">Alejandro Garnacho</label>
+				<label for="selection7"><input type="checkbox" id="selection7" value="7" class="inline">Roger Federer</label>
+				</div>
+				<div>
+				<label for="bio">Any comments or suggestions <textarea id="bio" rows="6" cols="30" placeholder="Ener your comment here..." name="bio"></textarea></label>
+				</div>
+				<input id= "submit" type="submit" value="Submit" name="submit">
+			</fieldset>
+		</form>
+	</div>
+</body>
+</html>

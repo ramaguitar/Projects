@@ -1,0 +1,73 @@
+body{
+	margin: 0;
+	padding: 0;
+	font-family: Tahoma;
+	font-size: 20px;
+	color: #f5f6f7;
+	background-image: url("https://www.vmcdn.ca/f/files/halifaxtoday/images/sports/060820-sports-adobestock_4437963.jpeg");
+	background-size: cover;
+}
+.container{
+	margin: 0;
+	padding: 1em;
+	background-color: rgba(0, 100, 0, 0.4);
+}
+label{
+	display: block;
+	margin: 0.5rem 0;
+}
+h1, p{
+	margin: 0 auto;
+	text-align: center;
+	font-style: italic;
+	padding: 1em auto;
+}
+div{
+	margin: 2em auto;
+	padding-left: 2em;
+}
+form{
+	margin: 1em auto 0 auto;
+	width: 40%;
+}
+fieldset{
+	background-color: rgba(40, 139, 40, 0.9);
+	border: none;
+	border-radius: 5px;
+}
+input, textarea, select{
+	display: block;
+	width: 90%;
+	margin: 10px 0 0 0;
+	min-height: 2em;
+	border-radius: 5px;
+}
+.inline{
+	display: inline-block;
+	width: unset;/*Elimina la regla anterior*/
+	margin: 0 0.5em 0 0;
+	vertical-align: middle;
+}
+input[type="submit"]{
+  background-color: #4CAF50;
+  border: none;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  text-decoration: none;
+  display: inline-block;
+  margin: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+  background-color: #3E8E41;
+}
+
+input[type="checkbox"], input[type="radio"] {
+  transform: scale(1.5);/*Para agrandar los checkbox y los radio*/
+}
+
+

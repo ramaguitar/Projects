@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="quiz.css">
+    <meta name="description" content="freeCodeCamp Accessibility Quiz practice project">
+    <title>Quiz Freecodecamp</title>
+</head>
+<body>
+    <header>
+        <img src="https://cdn.freecodecamp.org/platform/universal/fcc_primary.svg" alt="logo" id="logo">
+        <h1>HTML/CSS Quiz</h1>
+        <nav>
+            <ul>
+                <li><a href="#student-info" accesskey="r">INFO</a></li>
+                <li><a href="#html-questions" accesskey="a">HTML</a></li>
+                <li><a href="#css-questions" accesskey="m">CSS</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <form action="https://freecodecamp.org/practice-project/accessibility-quiz" method="post">
+            <section role="region" aria-labelledby="student-info">
+                <h2 id="student-info">Student Info</h2>
+                <div class="info">
+                    <label for="nombre">Name:</label>
+                    <input id="nombre" name="nombre" type="text" >
+                </div>
+                <div class="info">
+                    <label for="email">Email:</label>
+                    <input id="email" name="email" type="email">
+                </div>
+                <div class="info">
+                    <label for="nacimiento">D.O.B.<span class="sr-only">(Date of Birth)</span></label>
+                    <input id="nacimiento" name="nacimiento" type="date">
+                </div>
+            </section>
+            <section role="region" aria-labelledby="html-questions">
+                <h2 id="html-questions">HTML</h2>
+                <div class="question-block">
+                    <p>1</p>
+                    <fieldset class="question" name="quesiton1">
+                        <legend>The legend element represents a caption for the content of its
+                            parent fieldset element</legend>
+                        <ul class="answers-list">
+                            <li><label for="q1-a1"><input id="q1-a1" name="q1" type="radio" value="True">True</label></li>
+                            <li><label for="q1-a2"><input id="q1-a2" name="q1" type="radio" value="False">False</label></li>
+                        </ul>
+                    </fieldset>
+                </div>
+                <div class="question-block">
+                    <p>2</p>
+                    <fieldset class="question" name="question2">
+                        <legend>A label element nesting an input element is required to have a
+                for attribute with the same value as the input's id</legend>
+                        <ul class="answers-list">
+                            <li><label for="q2-a1"><input id="q2-a1" name="q2" type="radio" value="True">True</label></li>
+                            <li><label for="q2-a2"><input id="q2-a2" name="q2" type="radio" value="False">False</label></li>
+                        </ul>
+                    </fieldset>
+                </div>
+            </section>
+            <section role="region" aria-labelledby="css-questions">
+                <h2 id="css-questions">CSS</h2>
+                <div class="formrow">
+                    <div class="question-block">
+                        <label for="select">Are you a frontend developer?</label>
+                    </div>
+                    <div class="answer">
+                        <select id="select" name="select" required>
+                            <option value="">Select an option</option>
+                            <option value="yes">Yes</option>
+                            <option value="no">No</option>
+                        </select>
+                    </div>
+                    <div class="question-block">
+                        <label for="textarea">Do you have any questions:</label>
+                    </div>
+                    <div class="answer">
+                        <textarea id="textarea" name="textarea" cols="24" rows="5" placeholder="Who is flexbox..."></textarea>
+                    </div>
+                </div>
+            </section>
+            <input type="submit" value="Send">
+        </form>
+    </main>
+    <footer>
+        <address>
+            <a href="https://freecodecamp.org">freeCodeCamp</a><br />
+            San Francisco<br />
+            California<br />
+            USA
+        </address>
+    </footer>
+</body>
+</html>
