@@ -1,3 +1,9 @@
+@media (prefers-reduced-motion: no-preference){
+    *{
+        scroll-behavior: smooth
+    }
+}
+
 body{
     font-family: 'Poppins', sans-serif;
     margin: 0;
@@ -12,6 +18,11 @@ header{
     top: 0;
     align-items: center;
     justify-content: flex-end;
+    background: linear-gradient(
+    90deg,
+    rgba(36, 60, 164, 0.886),
+    rgba(180, 17, 17, 0.888)
+    );
 }
 
 nav ul{
@@ -60,7 +71,119 @@ li a{
 
 #projects{
     text-align: center;
-    padding: 10rem 2rem;
-    background: aqua;
+    padding: 5rem 2rem;
+    background: linear-gradient(
+    rgba(227, 222, 222, 0.879),
+    rgba(21, 163, 234, 0.799)
+    );
 }
 
+#projects h1{
+    color: rgba(18, 18, 18, 0.822);
+    font-size: 40px;
+    font-style: bold;
+    text-decoration: underline;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 10px;
+    max-width: 1400px;
+    margin: 0 auto;
+    gap: 30px;
+}
+
+.container a{
+    color: inherit;
+    text-decoration: none;
+}
+
+.project-tile:hover{
+    color: rgb(255, 198, 208);
+    border: solid rgb(243, 111, 133);
+    background-color: bisque;
+}
+
+.project-tile{
+    width: 400px;
+    border: 3px solid rgba(126, 126, 126, 0.954);
+    border-radius: 5px;
+    color: rgba(255, 255, 255, 0.895);
+
+}
+
+img{
+    width: 100%;
+    height: 400px;
+    object-fit: cover;/*Para que no se distorsionen las imagenes*/
+}
+
+.project-title{
+    display: flex;
+    width: 100%;
+    height: 50px;
+    background-color: rgba(126, 126, 126, 0.954);
+    justify-content: center;
+    align-items: center;
+    margin-top: -8px;
+    font-size: 18px;
+}
+
+.estetic-input {
+    background-color: rgba(126, 126, 126, 0.954);
+    border: none;
+    color: rgba(255, 255, 255, 0.895);
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+  
+.estetic-input:hover {
+    background-color: rgba(215, 43, 72, 0.897);
+}
+ 
+#contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: rgba(21, 163, 234, 0.799);
+    color: rgba(255, 255, 255, 0.895);
+    font-weight: bold;
+    font-size: 40px;
+    padding: 12rem;
+    min-width: 250px;
+}
+
+#contact h1{
+    text-align: center;
+    margin: 0;
+}
+
+.allredes{
+    display: inline-block;
+    width: 100%;
+    margin-top: 0;
+}
+
+.redes a{
+    color: rgba(255, 255, 255, 0.895);
+    text-decoration: none;
+    margin-left: 30px;
+}
+
+i{
+    margin-right: 5px;
+}
+
+.redes a:hover{
+    color: rgba(180, 17, 17, 0.877);
+}
